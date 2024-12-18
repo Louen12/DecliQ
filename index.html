@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DecliQ - Votre opinion compte</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>DecliQ</h1>
+            <nav>
+                <ul>
+                    <li><a href="#fonctionnement">Comment ça fonctionne ?</a></li>
+                    <li><a href="#a-propos">À propos</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h3 id="hero-devise">La politique avec un grand Q !</h3>
+            <p>Un média dédié à informer les jeunes citoyens français sur des sujets politiques avec transparence, en garantissant une communication claire sur nos sources. Nous offrons une expérience utilisateur personnalisée, simple et accessible grâce à du contenu infographique.</p>
+            <form id="newsletter-form" action="/api/submit-email" method="POST">
+                <label for="email">Inscrivez-vous pour être informé du lancement :</label>
+                <div id="newsletter-form-container">
+                    <input type="email" id="email" name="email" placeholder="Votre adresse mail" required>
+                    <button type="submit">S'inscrire</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="fonctionnement">
+            <h2>Comment ça fonctionne ?</h2>
+            <p>Découvrez comment Decliq vous permet de donner votre avis et de suivre vos représentants.</p>
+        </section>
+
+        <section id="a-propos">
+            <h2>À propos</h2>
+            <p>Decliq, c'est une plateforme neutre et accessible pour les citoyens désireux de s'informer et d'agir.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Pour toute question ou collaboration, contactez-nous via <a href="mailto:contact@decliq.fr">contact@decliq.fr</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Decliq. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,170 @@
+/* Réinitialisation de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif; /* Police par défaut */
+    line-height: 1.6;
+    color: #37393A;
+    margin: 0;
+    background-color: #FFF0DC;
+}
+
+header {
+    padding: 3rem 0 1rem 0;
+    height: 20vh;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Header */
+header h1 {
+    font-family: "Inter", sans-serif; /* Appliquer Inter au titre */
+    font-weight: 800; /* Titre en gras */
+    font-size: 1.8rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+header nav ul li a {
+    font-weight: 500; /* Appliquer un poids moyen */
+    font-size: 1rem; /* Taille adaptée */
+}
+
+header nav ul li a {
+    color: #37393A;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+#hero {
+    text-align: center;
+    padding: 10% 1rem;
+    margin-left: 10%;
+    margin-right: 50%;
+    height: 80vh;
+}
+
+#hero p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+#hero-devise {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#hero h3 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700; /* Gras */
+    font-size: 3rem; /* Ajusté pour être clair et impactant */
+}
+
+#hero p {
+    font-weight: 400; /* Poids léger */
+    font-size: 1rem; /* Taille agréable à lire */
+}
+
+#newsletter-form button {
+    font-family: "Inter", sans-serif;
+    font-weight: 600; /* Appliquer un poids semi-gras */
+    font-size: 1rem; /* Taille cohérente */
+}
+
+section h2 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700; /* Gras pour les titres de section */
+    font-size: 2rem;
+}
+
+footer {
+    font-family: "Inter", sans-serif;
+    font-weight: 400; /* Poids léger pour les informations de bas de page */
+}
+
+#newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#newsletter-form input {
+    padding: 0.5rem;
+    width: 300px;
+    border: 1px solid #FAFAFA;
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+
+#newsletter-form button {
+    padding: 0.7rem 1.5rem;
+    background-color: #8D4CF8;
+    color: #FAFAFA;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#newsletter-form button:hover {
+    background-color: #541faa;
+}
+
+#newsletter-form-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#fonctionnement{
+    height: 100vh;
+    background-color: #37393A;
+    color: #FAFAFA;
+}
+
+#a-propos{
+    height: 100vh;
+    background-color: #8D4CF8;
+    color: #37393A;
+}
+
+#contact{
+    height: 100vh;
+    background-color: #37393A;
+    color: #FAFAFA;
+}
+
+section {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+}
+
+
