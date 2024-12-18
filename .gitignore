@@ -1,3 +1,22 @@
 # Fichiers contenant des secrets
 .env
 .env.local
+
+# Node.js dependencies
+node_modules/
+
+# Logs
+logs/
+*.log
+
+# Systèmes d'exploitation
+.DS_Store
+Thumbs.db
+
+# IDE/Éditeurs
+.vscode/
+.idea/
+
+# Déploiement temporaire
+*.local
+*.swp
