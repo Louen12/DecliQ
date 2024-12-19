@@ -28,9 +28,15 @@
 
     <main>
         <section id="hero">
-            <div class="hero-content">
-                <h3 id="hero-devise">La politique avec un grand Q !</h3>
-                <p>Un média dédié à informer les jeunes citoyens français sur des sujets politiques avec transparence, en garantissant une communication claire sur nos sources. Nous offrons une expérience utilisateur personnalisée, simple et accessible grâce à du contenu infographique.</p>
+            <div id="intro-hero">
+                <div class="hero-content">
+                    <h3 id="hero-devise">La politique avec un grand Q !</h3>
+                    <p>Un média dédié à informer les jeunes citoyens français sur des sujets politiques avec transparence, en garantissant une communication claire sur nos sources. Nous offrons une expérience utilisateur personnalisée, simple et accessible grâce à du contenu infographique.</p>
+                </div>
+
+                <video id="video-intro" autoplay loop muted>
+                    <source src="images/video.MP4" type="video/mp4">
+                </video>
             </div>
         </section>
         
@@ -69,24 +75,40 @@
         </section>
 
         <section id="a-propos">
+            <h2>À PROPOS</h2>
             <div id="description">
-                <h2>À PROPOS</h2>
-                <p>
-                    Chez <strong>DecliQ</strong>, nous avons une mission : revaloriser les sujets politiques auprès des jeunes.
-                </p>
-                <p>
-                    Nous croyons que la politique ne doit pas être perçue comme inaccessible ou ennuyante, mais comme un domaine clé pour comprendre et agir sur le monde qui nous entoure. Notre application propose des contenus transparents et de qualité, conçus pour expliquer facilement et rapidement les enjeux actuels.
-                </p>
-                <p>
-                    <strong>DecliQ</strong>, c’est l’outil pour se forger sa propre opinion et s’intégrer dans le débat politique d’aujourd’hui. Parce que chaque voix compte, et surtout la vôtre.
-                </p>
+
+                <div class="description-texte">
+                    <p>
+                        Chez <strong>DecliQ</strong>, nous avons une mission : revaloriser les sujets politiques auprès des jeunes.
+                    </p>
+                    <p>
+                        Nous croyons que la politique ne doit pas être perçue comme inaccessible ou ennuyante, mais comme un domaine clé pour comprendre et agir sur le monde qui nous entoure. Notre application propose des contenus transparents et de qualité, conçus pour expliquer facilement et rapidement les enjeux actuels.
+                    </p>
+                    <p>
+                        <strong>DecliQ</strong>, c’est l’outil pour se forger sa propre opinion et s’intégrer dans le débat politique d’aujourd’hui. Parce que chaque voix compte, et surtout la vôtre.
+                    </p>
+                </div>
+                
+                <img id="image-propos" src="images/image_apropos.png">
             </div>
             
         </section>
 
         <section id="contact">
-            <h2>CONTACT</h2>
-            <p>Pour toute question ou collaboration, contactez-nous via <a href="mailto:contact@decliq.fr">contact@decliq.fr</a>.</p>
+            <h2>Le compte a rebours est lancé ! </h2>
+            <p>À bientôt pour le lancement de DecliQ...</p>
+ 
+
+            <form id="newsletter-form-bottom" action="/api/submit-email" method="POST">
+                <label for="email">Inscrivez-vous pour être informé du lancement :</label>
+                <div id="newsletter-form-container">
+                    <input type="email" id="email" name="email" placeholder="Votre adresse mail" required>
+                    <button type="submit">S'inscrire</button>
+                </div>
+            </form>
+
+            <p id="contact-bot-text">Pour toute question ou collaboration, contactez-nous via <a href="mailto:contact@decliq.fr">contact@decliq.fr</a>.</p>
         </section>
     </main>
 

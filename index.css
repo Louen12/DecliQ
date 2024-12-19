@@ -76,8 +76,8 @@ header nav ul li a {
 #hero-content {
     background-color: #FFF0DC;
     text-align: center;
-    padding: 10% 60% 10% 10%;
     height: 100vh;
+    margin-left: 5rem;
     background-image: url(images/decliq_main.png);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -87,7 +87,6 @@ header nav ul li a {
 #hero {
     background-color: #37393A;
     text-align: center;
-    padding: 10% 60% 10% 10%;
     height: 100vh;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -102,14 +101,13 @@ header nav ul li a {
     text-align: left;
 }
 
-.hero-content {
-    margin-top: 12rem;
-    margin-right: 2rem;
-}
+
 
 #hero-devise {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: bold;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
 }
 
 #hero h3 {
@@ -130,7 +128,7 @@ header nav ul li a {
     width: 30vw;
 }
 
-#newsletter-form button {
+#newsletter-form button, #newsletter-form-bottom button {
     font-family: "Inter", sans-serif;
     font-weight: 600; /* Appliquer un poids semi-gras */
     font-size: 1rem; /* Taille cohérente */
@@ -155,7 +153,15 @@ footer {
     margin-top: 20rem;
 }
 
-#newsletter-form input {
+#newsletter-form-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+#newsletter-form input, #newsletter-form-bottom input {
     padding: 0.5rem;
     width: 300px;
     border: 1px solid #FAFAFA;
@@ -163,7 +169,7 @@ footer {
     margin-right: 1rem;
 }
 
-#newsletter-form button {
+#newsletter-form button, #newsletter-form-bottom button {
     padding: 0.7rem 1.5rem;
     background-color: #8D4CF8;
     color: #FAFAFA;
@@ -173,13 +179,17 @@ footer {
     font-size: 1rem;
 }
 
-#newsletter-form button:hover {
+#newsletter-form button:hover, #newsletter-form-bottom button:hover {
     background-color: #541faa;
 }
 
 #newsletter-form-container {
     display: flex;
     justify-content: space-between;
+}
+
+#contact-bot-text {
+    margin-top: 3rem;
 }
 
 #fonctionnement{
@@ -221,7 +231,12 @@ footer {
 }
 
 #a-propos #description {
-    padding: 10% 60% 10% 10%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    
+    margin-top: 5rem;
+    display: flex;
+
 }
 
 #description p {
@@ -254,7 +269,7 @@ footer {
 }
 
 #contact{
-    height: 100vh;
+    height: 40vh;
     background-color: #37393A;
     color: #FAFAFA;
 }
@@ -281,3 +296,31 @@ html {
     scroll-behavior: smooth;
 }
 
+#description img {
+    height: auto; 
+    max-width: 20%;   
+}
+.description-texte {
+    margin-top: 5rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    width: 50%;
+    height: auto;
+}
+
+.div-intro-video {
+    display: flex;
+}
+
+#intro-hero {
+    display: flex;
+    padding-right: 10rem;
+    margin-top: 5rem;
+    margin-left: 5rem;
+}
+
+#video-intro {
+    width: 30%;
+    height: auto;
+    margin-left: 5rem;
+}
