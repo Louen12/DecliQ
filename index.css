@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    padding: 3rem 0 1rem 0;
+    padding: 5vh 0 2.5vh 0;
     height: 14vh;
 }
 
@@ -23,7 +23,7 @@ header {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 2vw;
 }
 
 /* Header */
@@ -34,7 +34,7 @@ header h1 img{
 header nav ul {
     list-style: none;
     display: flex;
-    gap: 2rem;
+    gap: 2vh;
 }
 
 header nav ul li a {
@@ -77,10 +77,10 @@ header nav ul li a {
     background-color: #FFF0DC;
     text-align: center;
     height: 100vh;
-    margin-left: 5rem;
+    margin-left: 7vw;
     background-image: url(images/decliq_main.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 90%;
     background-position: left 100%;
 }
 
@@ -95,7 +95,7 @@ header nav ul li a {
 }
 
 #hero p {
-    margin-bottom: 2rem;
+    margin-bottom: 3vh;
     font-size: 1.2rem;
     font-weight: 400; /* Poids léger */
     text-align: left;
@@ -106,8 +106,8 @@ header nav ul li a {
 #hero-devise {
     font-size: 3.5rem;
     font-weight: bold;
-    margin-bottom: 5rem;
-    margin-top: 5rem;
+    padding-top: 15vh;
+    padding-bottom: 10vh;
 }
 
 #hero h3 {
@@ -121,7 +121,6 @@ header nav ul li a {
     position: absolute;
     top: 35%; 
     left: 65%;
-
 }
 
 #hero-news img{
@@ -131,7 +130,7 @@ header nav ul li a {
 #newsletter-form button, #newsletter-form-bottom button {
     font-family: "Inter", sans-serif;
     font-weight: 600; /* Appliquer un poids semi-gras */
-    font-size: 1rem; /* Taille cohérente */
+    font-size: 2rem; /* Taille cohérente */
 }
 
 section h2 {
@@ -149,28 +148,28 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
-    margin-top: 20rem;
+    gap: 1vh;
+    margin-top: 32vh;
 }
 
 #newsletter-form-bottom {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
-    margin-top: 2rem;
+    gap: 2vh;
+    margin-top: 3vh;
 }
 
 #newsletter-form input, #newsletter-form-bottom input {
-    padding: 0.5rem;
-    width: 300px;
+    padding: 1vh 1vw;
+    width: 20vw;
     border: 1px solid #FAFAFA;
     border-radius: 5px;
-    margin-right: 1rem;
+    margin-right: 1vw;
 }
 
 #newsletter-form button, #newsletter-form-bottom button {
-    padding: 0.7rem 1.5rem;
+    padding: 1vh 1vw;
     background-color: #8D4CF8;
     color: #FAFAFA;
     border: none;
@@ -189,7 +188,7 @@ footer {
 }
 
 #contact-bot-text {
-    margin-top: 3rem;
+    margin-top: 2.5vh;
 }
 
 #fonctionnement{
@@ -216,8 +215,8 @@ footer {
 #fonctionnement #infos div{
     width: 30vw;
     margin-top: 10vh;
-    margin-right: 1rem;
-    margin-left: 1rem;
+    margin-right: 1vw;
+    margin-left: 1vw;
 }
 
 #fonctionnement #infos img{
@@ -231,16 +230,16 @@ footer {
 }
 
 #a-propos #description {
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
     
-    margin-top: 5rem;
+    margin-top: 4vh;
     display: flex;
 
 }
 
 #description p {
-    margin-bottom: 4rem;
+    margin-bottom: 3.5vh;
     font-size: 1.2rem;
 }
 
@@ -259,13 +258,13 @@ footer {
 }
 
 #notif {
-    margin-top: 5rem;
+    margin-top: 4vh;
 }
 
 #infos {
-    margin-top: 5rem;
-    margin-left: 4rem;
-    margin-right: 4rem;
+    margin-top: 4vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
 }
 
 #contact{
@@ -275,18 +274,18 @@ footer {
 }
 
 section {
-    padding: 2rem 1rem;
+    padding: 2vh 1vw;
     text-align: center;
 }
 
 section h2 {
     font-size: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1vh;
 }
 
 footer {
     text-align: center;
-    padding: 1rem;
+    padding: 1vh 1vw;
     background-color: #333;
     color: white;
 }
@@ -301,9 +300,9 @@ html {
     max-width: 20%;   
 }
 .description-texte {
-    margin-top: 5rem;
-    margin-left: 10rem;
-    margin-right: 10rem;
+    margin-top: 7vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
     width: 50%;
     height: auto;
 }
@@ -314,13 +313,13 @@ html {
 
 #intro-hero {
     display: flex;
-    padding-right: 10rem;
-    margin-top: 5rem;
-    margin-left: 5rem;
+    padding-right: 10vw;
+    margin-top: 8vh;
+    margin-left: 5vw;
 }
 
 #video-intro {
     width: 30%;
     height: auto;
-    margin-left: 5rem;
+    margin-left: 5vw;
 }

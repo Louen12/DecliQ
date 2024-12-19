@@ -16,7 +16,9 @@ export default async function handler(req, res) {
 
       if (error) {
         console.error("Erreur lors de l'insertion dans la base de données :", error);
-        return res.status(500).json({ message: "Erreur lors de l'enregistrement" });
+        return res.status(500).json({ message: "Erreur lors de l'enregistrement", 
+          redirectUrl: "/thanks.html" 
+         });
       }
 
       console.log("Email enregistré dans la base de données :", data);
@@ -39,12 +41,17 @@ export default async function handler(req, res) {
       console.log(`Message envoyé à : ${email}`);
 
       // Réponse de succès
-      return res.status(200).json({ message: "Merci pour votre inscription !" });
+      return res.status(200).json({ 
+        message: "Merci pour votre inscription !", 
+        redirectUrl: "/thanks.html" 
+      });
     } catch (error) {
       console.error("Erreur serveur :", error);
-      return res.status(500).json({ message: "Erreur serveur" });
+      return res.status(500).json({ message: "Erreur serveur" , 
+        redirectUrl: "/thanks.html" });
     }
   } else {
-    return res.status(405).json({ message: "Méthode non autorisée" });
+    return res.status(405).json({ message: "Méthode non autorisée" , 
+      redirectUrl: "/thanks.html" });
   }
 }
