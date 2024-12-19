@@ -28,46 +28,64 @@
 
     <main>
         <section id="hero">
-            <h3 id="hero-devise">La politique avec un grand Q !</h3>
-            <p>Un média dédié à informer les jeunes citoyens français sur des sujets politiques avec transparence, en garantissant une communication claire sur nos sources. Nous offrons une expérience utilisateur personnalisée, simple et accessible grâce à du contenu infographique.</p>
-            <form id="newsletter-form" action="/api/submit-email" method="POST">
-                <label for="email">Inscrivez-vous pour être informé du lancement :</label>
-                <div id="newsletter-form-container">
-                    <input type="email" id="email" name="email" placeholder="Votre adresse mail" required>
-                    <button type="submit">S'inscrire</button>
-                </div>
-            </form>
-            <div id="hero-news">
-                <img src="images/news.png">
+            <div class="hero-content">
+                <h3 id="hero-devise">La politique avec un grand Q !</h3>
+                <p>Un média dédié à informer les jeunes citoyens français sur des sujets politiques avec transparence, en garantissant une communication claire sur nos sources. Nous offrons une expérience utilisateur personnalisée, simple et accessible grâce à du contenu infographique.</p>
+            </div>
+        </section>
+        
+
+        <section id="hero-content">
+            <div>
+                <form id="newsletter-form" action="/api/submit-email" method="POST">
+                    <label for="email">Inscrivez-vous pour être informé du lancement :</label>
+                    <div id="newsletter-form-container">
+                        <input type="email" id="email" name="email" placeholder="Votre adresse mail" required>
+                        <button type="submit">S'inscrire</button>
+                    </div>
+                </form>
             </div>
         </section>
 
+        
+
+
         <section id="fonctionnement">
             <h2>FONCTIONNEMENT</h2>
-            <p>Découvrez comment Decliq vous permet de suivre les actualités politiques.</p>
             <div id="infos">
                 <div>
                     <img src="images/news.png">
-                    <p>Des news adaptés à votre profils</p>
+                    <p>Des vidéos et infographies pour comprendre les sujets politique en quelques minutes.</p>
                 </div>
                 <div>
                     <img src="images/votes.png">
-                    <p>Des sondages quotidiens pour récolter l'avis des utilisateur</p>
+                    <p>Des sondages interactifs pour vous permettre d’exprimer vos idées et de participer activement au débat.</p>
                 </div>
                 <div>
                     <img src="images/infographie.png">
-                    <p>Des contenues infographique qui permettent une meilleur compréhension</p>
+                    <p>Un espace personnalisé, adapté à vos centres d’intérêt, pour une expérience engageante.</p>
                 </div>
             </div>
         </section>
 
         <section id="a-propos">
-            <h2>À propos</h2>
-            <p>Decliq, c'est une plateforme neutre et accessible pour les citoyens désireux de s'informer et d'agir.</p>
+            <div id="description">
+                <h2>À PROPOS</h2>
+                <p>
+                    Chez <strong>DecliQ</strong>, nous avons une mission : revaloriser les sujets politiques auprès des jeunes.
+                </p>
+                <p>
+                    Nous croyons que la politique ne doit pas être perçue comme inaccessible ou ennuyante, mais comme un domaine clé pour comprendre et agir sur le monde qui nous entoure. Notre application propose des contenus transparents et de qualité, conçus pour expliquer facilement et rapidement les enjeux actuels.
+                </p>
+                <p>
+                    <strong>DecliQ</strong>, c’est l’outil pour se forger sa propre opinion et s’intégrer dans le débat politique d’aujourd’hui. Parce que chaque voix compte, et surtout la vôtre.
+                </p>
+            </div>
+            
         </section>
 
         <section id="contact">
-            <h2>Contact</h2>
+            <h2>CONTACT</h2>
             <p>Pour toute question ou collaboration, contactez-nous via <a href="mailto:contact@decliq.fr">contact@decliq.fr</a>.</p>
         </section>
     </main>
@@ -75,5 +93,6 @@
     <footer>
         <p>&copy; 2024 Decliq. Tous droits réservés.</p>
     </footer>
+    <script src="index.js" defer></script>
 </body>
 </html>

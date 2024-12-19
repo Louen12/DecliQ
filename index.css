@@ -8,14 +8,13 @@
 body {
     font-family: "Inter", sans-serif; /* Police par défaut */
     line-height: 1.6;
-    color: #37393A;
     margin: 0;
     background-color: #FFF0DC;
 }
 
 header {
     padding: 3rem 0 1rem 0;
-    height: 20vh;
+    height: 14vh;
 }
 
 .header-container {
@@ -43,26 +42,69 @@ header nav ul li a {
     font-size: 1rem; /* Taille adaptée */
 }
 
-header nav ul li a {
-    color: #37393A;
+nav ul li a {
     text-decoration: none;
     font-weight: bold;
 }
 
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* S'assure que la navbar reste au-dessus */
+    background-color: transparent; /* Transparent au début */
+    color: white; 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Lorsque la classe "scrolled" est ajoutée */
+header.scrolled {
+    opacity: 95%;
+    background-color: #FFF0DC; /* Couleur de fond */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ajoute une ombre subtile */
+}
+
+header nav ul li a {
+    color: #37393A; /* Assurez-vous que les liens sont visibles */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
 /* Hero Section */
-#hero {
+#hero-content {
+    background-color: #FFF0DC;
     text-align: center;
     padding: 10% 60% 10% 10%;
-    height: 80vh;
-    background-image: url(images/ligne.png);
+    height: 100vh;
+    background-image: url(images/decliq_main.png);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: left 100%;
 }
 
+#hero {
+    background-color: #37393A;
+    text-align: center;
+    padding: 10% 60% 10% 10%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: left 100%;
+    color: #FAFAFA;
+}
+
 #hero p {
     margin-bottom: 2rem;
     font-size: 1.2rem;
+    font-weight: 400; /* Poids léger */
+    text-align: left;
+}
+
+.hero-content {
+    margin-top: 12rem;
+    margin-right: 2rem;
 }
 
 #hero-devise {
@@ -74,11 +116,7 @@ header nav ul li a {
     font-family: "Inter", sans-serif;
     font-weight: 700; /* Gras */
     font-size: 3rem; /* Ajusté pour être clair et impactant */
-}
-
-#hero p {
-    font-weight: 400; /* Poids léger */
-    font-size: 1rem; /* Taille agréable à lire */
+    text-align: left;
 }
 
 #hero-news{
@@ -114,6 +152,7 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    margin-top: 20rem;
 }
 
 #newsletter-form input {
@@ -149,11 +188,13 @@ footer {
     color: #FAFAFA;
     text-align: center;
     padding-top: 10vh;
+    font-size: 1rem;
 }
 
 #fonctionnement h2{
     color:#8D4CF8;
     margin-bottom: 5vh;
+    font-size: 3rem;
 }
 
 #fonctionnement #infos{
@@ -165,6 +206,8 @@ footer {
 #fonctionnement #infos div{
     width: 30vw;
     margin-top: 10vh;
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
 
 #fonctionnement #infos img{
@@ -172,10 +215,42 @@ footer {
     margin-bottom: 3vh;
 }
 
-#a-propos{
+#a-propos {
     height: 100vh;
-    background-color: #8D4CF8;
     color: #37393A;
+}
+
+#a-propos #description {
+    padding: 10% 60% 10% 10%;
+}
+
+#description p {
+    margin-bottom: 4rem;
+    font-size: 1.2rem;
+}
+
+#a-propos #infos{
+    position: absolute;
+    top: 240%; 
+    left: 40%;
+    width: 40vw;
+}
+
+#a-propos #notif{
+    position: absolute;
+    top: 215%; 
+    left: 80%;
+    width: 12vw;
+}
+
+#notif {
+    margin-top: 5rem;
+}
+
+#infos {
+    margin-top: 5rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
 }
 
 #contact{
@@ -201,4 +276,8 @@ footer {
     color: white;
 }
 
+
+html {
+    scroll-behavior: smooth;
+}
 
