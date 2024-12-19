@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@supabase/supabase-js": "^2.47.9",
     "dotenv": "^16.4.7",
     "sib-api-v3-sdk": "^8.5.0"
   }

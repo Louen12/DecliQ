@@ -1,9 +1,6 @@
 import 'dotenv/config';
-import fs from "fs";
-import path from "path";
+import { supabase } from './supabaseClient';
 import SibApiV3Sdk from "sib-api-v3-sdk";
-
-const filePath = path.resolve("./emails.json");
 
 export default async function handler(req, res) {
   if (req.method === "POST") {
@@ -14,16 +11,15 @@ export default async function handler(req, res) {
     }
 
     try {
-      // Charger les emails existants
-      let emails = [];
-      if (fs.existsSync(filePath)) {
-        const data = fs.readFileSync(filePath, "utf-8");
-        emails = JSON.parse(data);
+      // Ajouter l'email à la base de données Supabase
+      const { data, error } = await supabase.from('mail').insert([{ mail: email }]);
+
+      if (error) {
+        console.error("Erreur lors de l'insertion dans la base de données :", error);
+        return res.status(500).json({ message: "Erreur lors de l'enregistrement" });
       }
 
-      // Ajouter l'email
-      emails.push({ email, date: new Date().toISOString() });
-      fs.writeFileSync(filePath, JSON.stringify(emails, null, 2));
+      console.log("Email enregistré dans la base de données :", data);
 
       // Envoyer un email via Brevo
       const defaultClient = SibApiV3Sdk.ApiClient.instance;
@@ -40,12 +36,12 @@ export default async function handler(req, res) {
 
       await apiInstance.sendTransacEmail(sendSmtpEmail);
 
-      console.log(`Nouvel email enregistré et message envoyé à : ${email}`);
+      console.log(`Message envoyé à : ${email}`);
 
       // Réponse de succès
       return res.status(200).json({ message: "Merci pour votre inscription !" });
     } catch (error) {
-      console.error(error);
+      console.error("Erreur serveur :", error);
       return res.status(500).json({ message: "Erreur serveur" });
     }
   } else {
